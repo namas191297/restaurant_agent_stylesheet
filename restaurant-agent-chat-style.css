@@ -1,0 +1,18 @@
+/* chat-style.css */
+.vf-chat-widget {
+    font-family: 'Inter', sans-serif;
+    --vf-chat-primary: #e91e63; /* primary accent color */
+    --vf-chat-bubble-user-bg: #e91e63;
+    --vf-chat-bubble-bot-bg: #f1f1f1;
+    --vf-chat-header-bg: #222;
+    --vf-chat-header-title-color: #fff;
+    --vf-chat-font-color: #333;
+    --vf-chat-input-bg: #fff;
+    --vf-chat-input-border: 1px solid #ddd;
+  }
+  
+  /* Optional: Make the chat bubble more rounded */
+  .vf-chat-widget .vf-chat-bubble {
+    border-radius: 16px;
+  }
+  
