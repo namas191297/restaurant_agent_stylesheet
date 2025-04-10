@@ -1,18 +1,37 @@
-/* chat-style.css */
+/* Main Widget Styling */
 .vf-chat-widget {
-    font-family: 'Inter', sans-serif;
-    --vf-chat-primary: #e91e63; /* primary accent color */
-    --vf-chat-bubble-user-bg: #e91e63;
-    --vf-chat-bubble-bot-bg: #f1f1f1;
-    --vf-chat-header-bg: #222;
-    --vf-chat-header-title-color: #fff;
-    --vf-chat-font-color: #333;
-    --vf-chat-input-bg: #fff;
-    --vf-chat-input-border: 1px solid #ddd;
-  }
-  
-  /* Optional: Make the chat bubble more rounded */
-  .vf-chat-widget .vf-chat-bubble {
-    border-radius: 16px;
-  }
-  
+  font-family: 'Inter', sans-serif;
+  --vf-chat-primary: #d32f2f; /* Red theme */
+  --vf-chat-header-bg: #d32f2f;
+  --vf-chat-header-title-color: #ffffff;
+  --vf-chat-font-color: #222;
+  --vf-chat-input-bg: #fff;
+  --vf-chat-input-border: 1px solid #ccc;
+}
+
+/* Assistant/System Message Bubble */
+.vfrc-system-response .vfrc-message {
+  background-color: #d32f2f !important; /* red */
+  color: #000 !important;               /* black text */
+  border-radius: 14px !important;
+}
+
+/* User Message Bubble (optional) */
+.vfrc-user-response .vfrc-message {
+  background-color: #ffffff !important;
+  color: #d32f2f !important;
+  border: 1px solid #d32f2f !important;
+  border-radius: 14px !important;
+}
+
+/* Optional: Send button customization */
+.vfrc-chat-input--button {
+  background-color: #d32f2f !important;
+  color: white !important;
+  border-radius: 6px;
+}
+
+/* Optional: Footer watermark */
+.vfrc-footer--watermark {
+  display: none; /* remove Voiceflow branding if allowed in your plan */
+}
